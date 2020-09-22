@@ -13,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', 'PagesController@home');
-Route::get('/detail', 'PagesController@detail');
+
+//route CRUD
+Route::get('/','BerandaController@index');
+
+Route::get('/profil','ProfilController@index');
+
+Route::get('/projek','ProjekController@index');
+
+Route::get('/projek/view/{slug}','ProjekController@detail');

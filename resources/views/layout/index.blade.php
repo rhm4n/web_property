@@ -31,18 +31,23 @@
                 <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mr-4">
                         <li class="item">
-                            <a class="link" href="#">DAFTAR MARKETING</a>
+                            <a class="link" href="{{ url('/daftar') }}">DAFTAR MARKETING</a>
                         </li>
                         <li class="item">
-                            <a class="link" href="/">BERANDA</a>
+                            <a class="link" href="{{ url('/') }}">BERANDA</a>
                         </li>
                         <li class="item">
-                            <a class="link" href="#">PROJEK</a>
+                            <a class="link" href="{{ url('/projek') }}">PROJEK</a>
                         </li>
-                        <li class="item">
-                            <a class="link" href="#">PROFIL</a>
+                        <li class="item btn-group" data-toggle="dropdown">
+                            <a class="link dropdown-toggle" href="#" aria-haspopup="true" aria-expanded="false">PROFIL</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#"><div><i class="icon-building"></i>Profil Perusahaan</div></a></li>
+                                <li class="dropdown-item"><a href="#"><div><i class="icon-newspaper"></i>Portofolio</div></a></li>
+                                <li class="dropdown-item"><a href="#"><div><i class="icon-users1"></i>Tim Kami</div></a></li>
+                            </ul>
                         </li>
-                        <button class=" link btn btn-outline-primary" type="button">LOGIN</button>
+                        <button class="link btn btn-outline-primary" type="button"><a href="{{ url('/auth') }}">LOGIN</a></button>
                     </ul>
                 </div>
             </div>

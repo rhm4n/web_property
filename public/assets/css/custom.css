@@ -1,0 +1,27 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+/* .jssocials-share-link { 
+	border-radius: 50%; 
+} */
+
+/* hidden Image max 400px */
+@media (max-width:400px){
+    .hidden_item{
+		display: none !important; 
+	}
+	
+}
+
+@media (max-width:320px){
+	.process-steps{
+		display: none; 
+	}
+}
+
+
+
